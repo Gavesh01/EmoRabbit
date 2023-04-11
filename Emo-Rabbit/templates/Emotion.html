@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sentiment Analysis Web App</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/Emotion.css')}}">
+  </head>
+  <body>
+    <section class="title">
+      <img src="https://drive.google.com/uc?export=view&id=17YXzqgFWRYpRz6FlHDrT8rNMIk2KcuAm" alt="Emo-Rabbit" id="logo">
+      <h1 style="padding-left: 120px;">Emo-Rabbit</h1>
+    </section>
+    <br>
+
+    <section class="form">
+      <form method="POST" action="/predict">
+        <label for="text" style="color:orangered; font-size: x-large; font-weight: bold;">Enter Review to detect sentiment</label>
+        <br><br>
+        <textarea rows="25" cols="70" id="text" name="text" required>{{ request.form['text'] if request.method == 'POST' else '' }}</textarea>
+        <br><br>
+        <input type="submit" value="Submit" id="buttons">
+        <input type="reset" value="Reset" id="buttons">
+      </form>
+      {% if prediction %}
+      <p style="font-size:x-large;">The sentiment of the review is: {{ prediction }}</p>
+      {% endif %}
+    </section>
+
+    
+
+    <section class="navbar">
+      <ul>
+        <a href="{{ url_for('Index') }}"><img src="https://drive.google.com/uc?export=view&id=1O6cHz9nUOeSziPbX0jX7ktSaWrlk9g7Q" class="icons" height="80px" width="80px" style="border-radius:50%;"></a>
+        <br>
+        <li>Home</li>
+        <br>
+        <a href="{{ url_for('home') }}"><img src="https://drive.google.com/uc?export=view&id=1ohlHsAQpGUonn0-GLgeCYWTBbcDeJLTr" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
+        <br>
+        <li>Emo-Detector</li>
+        <a href="{{ url_for('SignUp') }}"><img src="https://drive.google.com/uc?export=view&id=1DMEEEV2RzcM9f0OnIs8zmm6PecWsEEJ5" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
+        <br><br>
+        <li>Database</li>
+        <br>
+        <a href="{{ url_for('AboutUs') }}"><img src="https://drive.google.com/uc?export=view&id=1Wpqg0vwBa7a2JBfKx0s47D49637xQG02" class="icons" height="80px" width="80px" style="border-radius:50%;"></a></li>
+        <br>
+        <li>About Us</li>
+    </ul>
+  </section>
+  
+
+   <section class="subtitle">
+       <h1>Detect Sentiment with just click of a button</h1>
+       <h3>Emo-Rabbit summarizer can be used to summarize hotel reviews and detect the review author's emotions.
+        Our website uses Natural Language Processing toolkits to locate important information while maintaining the original context.</h3>
+   </section>
+  
+  <div class="socialmedia">
+    <p>How can we help?</p>
+    <p>+1-855-610-TREE</p>
+    <p>Call Us. Its toll free</p>
+    <img src="https://drive.google.com/uc?export=view&id=1JM289QevD4BvMLAOq8oGf_kNUw94ro2T" alt="Instagram" height="40" width="40" style="border-radius: 50%; padding-right: 50px;">
+    <img src="https://drive.google.com/uc?export=view&id=1tQhyGo5C9exLz1KnH4_eRXqIETJ2fujF" alt="Facebook" height="40" width="40" style="border-radius: 50%; padding-right: 50px;">
+    <img  src="https://drive.google.com/uc?export=view&id=13WFGCechX2DpqxLY0ojtMPs4pFUBSVzr" alt="Twitter" height="40" width="40" style="border-radius: 50%; padding-right: 50px;">
+  </div> 
+
+</body>
+</html>
+

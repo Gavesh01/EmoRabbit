@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.title{
+    max-width: 100%;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 2%;
+    padding-left: 5%;
+    background-color: orange;
+}
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+.form{  
+    float: left;
+    width: fit-content;
+    margin-left: 20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border-style: outset;
+    color: orangered;
+    font-family: sans-serif;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 10%;
+    
+}
+
+.navbar{
+    float: right;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 10%;
+    font-size: larger;
+    padding-right: 2%;
+    font-family: sans-serif;
+    color: orangered;
+    height:600px;
+}
+.navbar > ul{
+    list-style-type: none;
+}
+
+
+
+  .icons{
+    padding: 0px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.icons:hover {
+ transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#buttons{
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10%;
+}
+
+#buttons{
+    transition-duration: 0.4s;
+  }
+  
+  #buttons:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.title{
+    max-width: 100%;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 2%;
+    padding-left: 5%;
+    background-color: orange;
+}
+.title > h1{
+    font-size: xxx-large;
+    font-family: sans-serif;
+}
+
+.subtitle{
+    max-width: 100%;
+    background-image:url("/static/images/questionmarks.jpg");   
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2%;
+    clear: both;
+    margin-top: 45%;
+}
+
+.socialmedia{
+    clear: left; 
+    padding-top: 40px; 
+    background-color: orange; 
+    border-top-style: solid;
+     border-width: 20px; 
+     border-color: orangered; 
+     padding-left: 20px;  
+     padding-bottom: 20px; 
+     color: color;
+     transition: transform .2s; /* Animation */
+     margin-top: 100px;
+    }
+
+     #logo{
+        height: 90px;
+        width:90px;
+        border-radius: 50%;
+        float: left;
+        padding-top: 20px;
+        padding-left: 10px;
+        transition: transform .2s; /* Animation */
+    }
+    #logo:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }

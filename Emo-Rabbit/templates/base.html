@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    
+      <link rel="stylesheet" href="{{url_for('static',filename='static/css/login_page.css')}}">
+      
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; Login</p>
+    </footer>
+</body>
+</html>

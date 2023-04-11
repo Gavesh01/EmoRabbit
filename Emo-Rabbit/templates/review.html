@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews</title>
+</head>
+<body>
+    <img src="https://drive.google.com/uc?export=view&id=17YXzqgFWRYpRz6FlHDrT8rNMIk2KcuAm" alt="Emo-Rabbit" id="logo">
+    <h1>Reviews</h1>
+    {% for review in reviews %}
+        <div>
+            <h3>Original Review:</h3>
+            <p>{{ review.original_review }}</p>
+            <h3>Summarized Review:</h3>
+            <p>{{ review.summarized_review }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
